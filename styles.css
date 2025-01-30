@@ -330,7 +330,7 @@ img.redsocial {
     width: 660px;
     justify-self: center;
     background: #ebebeb;
-    height: 580px;
+    height: auto;
     padding: 30px;
     border-radius: 40px;
     align-content: center;
