@@ -342,9 +342,9 @@ img.redsocial {
     }
 
     .experiencia {
-   	margin-left: 20px;
-    	margin-right: 20px;
-	height: 220px; /* Los elementos dentro de sobremi se apilan en dispositivos pequeños */
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 290px;
     }
 
     .sag {
@@ -368,10 +368,10 @@ img.redsocial {
      }
 
     .nacimiento {
-	margin-left: 10px;
-    	margin-right: 10px;
-    	height: 580px;
-    	align-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 840px;
+        align-content: center;
     }
 
 .portfolioheader {
@@ -380,7 +380,7 @@ img.redsocial {
 
     .gallery {
         display: block;
-        width: 417px;
+        width: 317px;
     }
 
     .gallery img {
@@ -392,8 +392,13 @@ img.redsocial {
         width: 100%; /* La sección ocupa el 100% del ancho */
     }
 
-.incentivo {
-    width: 410px;
+    .incentivo {
+        width: 280px;
+        height: 650px;
+    }
+
+img.she {
+    width: 330px;
 }
 
     /* Asegura que la parte superior de la página se vea correctamente en móviles */
