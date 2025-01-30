@@ -183,7 +183,7 @@
 	});
 	</script>
 <script>
-	document.addEventListener("contextmenu", function (e) {
+document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Bloquea el clic derecho
 });
 
@@ -207,6 +207,15 @@ document.addEventListener("keydown", function (e) {
     if (e.key === "F12") { // F12 (DevTools)
         e.preventDefault();
     }
+});
+
+// Prevenir que las imágenes se arrastren
+const images = document.querySelectorAll("img");
+images.forEach((img) => {
+    img.setAttribute("draggable", "false"); // Establece draggable="false"
+    img.addEventListener("dragstart", function (e) {
+        e.preventDefault(); // Bloquea el evento de arrastre
+    });
 });
 </script>
     <script src="script.js"></script>
