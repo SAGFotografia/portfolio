@@ -19,9 +19,11 @@ let imagenesEvento = [
 
 let indiceActual = 0;
 let eventoActual = 0;
+let estaTeclaPresionada = false; // Variable para evitar eventos duplicados
 
 function abrirVisor(indice) {
     indiceActual = indice;
+    console.log("Abriendo visor con la imagen en el índice:", indiceActual);
     document.getElementById("visorImg").src = imagenesEvento[eventoActual][indice];
     document.getElementById("visor").style.display = "flex";
 }
@@ -32,11 +34,14 @@ function cerrarVisor() {
 
 function cambiarImagen(direccion) {
     indiceActual += direccion;
+
     if (indiceActual < 0) {
         indiceActual = imagenesEvento[eventoActual].length - 1;
     } else if (indiceActual >= imagenesEvento[eventoActual].length) {
         indiceActual = 0;
     }
+
+    console.log("Cambiando a la imagen en el índice:", indiceActual);
     document.getElementById("visorImg").src = imagenesEvento[eventoActual][indiceActual];
 }
 
@@ -47,6 +52,10 @@ document.addEventListener("keydown", function (event) {
         if (event.key === "ArrowUp" || event.key === "ArrowDown") {
             event.preventDefault();
         }
+        
+        // Prevenir múltiples disparos de la tecla
+        if (estaTeclaPresionada) return; // Si la tecla ya está presionada, no hacer nada
+        
         if (event.key === "ArrowLeft") {
             cambiarImagen(-1); // Flecha izquierda: imagen anterior
         } else if (event.key === "ArrowRight") {
@@ -54,6 +63,16 @@ document.addEventListener("keydown", function (event) {
         } else if (event.key === "Escape") {
             cerrarVisor(); // Escape: cerrar el visor
         }
+        
+        // Marcar la tecla como presionada
+        estaTeclaPresionada = true;
+    }
+});
+
+// Evento para detectar cuando la tecla se ha soltado, permitiendo presionar la tecla nuevamente
+document.addEventListener("keyup", function (event) {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        estaTeclaPresionada = false; // Permitir que se presione la tecla nuevamente
     }
 });
 
