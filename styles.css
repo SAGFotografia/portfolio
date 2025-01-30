@@ -346,6 +346,10 @@ img.redsocial {
         margin-right: 10px;
     }
 
+h2.tituloapartado {
+    font-size: 67px;
+}
+	
     .experiencia {
         margin-left: 20px;
         margin-right: 20px;
@@ -380,7 +384,7 @@ img.redsocial {
     }
 
 .portfolioheader {
-    height: 417px;
+    height: auto;
 }
 
     .gallery {
