@@ -40,6 +40,24 @@ function cambiarImagen(direccion) {
     document.getElementById("visorImg").src = imagenesEvento[eventoActual][indiceActual];
 }
 
+// 👇 Evento para detectar las teclas de flechas e implementar la navegación por teclado
+document.addEventListener("keydown", function (event) {
+    if (document.getElementById("visor").style.display === "flex") {
+        // Prevenir el desplazamiento en la página al presionar las flechas arriba o abajo
+        if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+            event.preventDefault();
+        }
+        if (event.key === "ArrowLeft") {
+            cambiarImagen(-1); // Flecha izquierda: imagen anterior
+        } else if (event.key === "ArrowRight") {
+            cambiarImagen(1); // Flecha derecha: imagen siguiente
+        } else if (event.key === "Escape") {
+            cerrarVisor(); // Escape: cerrar el visor
+        }
+    }
+});
+
+
 // CAMBIO DE EVENTOS EN EL PORTAFOLIO
 function cambiarEvento(evento) {
     eventoActual = evento;
@@ -54,4 +72,5 @@ function cambiarEvento(evento) {
         gallery.appendChild(img);
     });
 }
+
 
