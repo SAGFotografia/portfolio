@@ -384,7 +384,7 @@ img.redsocial {
 
     .gallery {
         display: block;
-        width: 317px;
+        width: auto;
     }
 
     .gallery img {
