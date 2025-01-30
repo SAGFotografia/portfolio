@@ -21,6 +21,10 @@ img.she {
     width: 460px;
 }
 
+.formulario {
+    width: auto;
+}
+
 header {
     background: #ebebeb;
     color: white;
@@ -364,6 +368,11 @@ h2.tituloapartado {
     .sofi {
 	align-content: center;
     	margin-right: 0px;
+    }
+
+    .formulario {
+    margin-left: 5px;
+    margin-right: 15px;
     }
 
 .eventos {
