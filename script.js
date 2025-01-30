@@ -9,12 +9,12 @@ document.querySelectorAll('.seccion').forEach(enlace => {
 
 // VISOR DE IMÁGENES
 let imagenesEvento = [
-    ["images/1/1.jpg", "images/1/3.jpg", "images/1/4.jpg", "images/1/5.jpg", "images/1/2.jpg", "images/1/6.jpg", "images/1/7.jpg", "images/1/8.jpg", "images/1/9.jpg", "images/1/10.jpg"],
-    ["images/2/1.jpg", "images/2/2.jpg", "images/2/3.jpg", "images/2/4.jpg", "images/2/5.jpg", "images/2/6.jpg", "images/2/7.jpg", "images/2/8.jpg", "images/2/9.jpg", "images/2/10.jpg"],
-    ["images/3/1.jpg", "images/3/2.jpg", "images/3/3.jpg", "images/3/4.jpg", "images/3/5.jpg", "images/3/6.jpg", "images/3/7.jpg", "images/3/8.jpg"],
+    ["images/1/1.JPG", "images/1/3.JPG", "images/1/4.JPG", "images/1/5.JPG", "images/1/2.JPG", "images/1/6.JPG", "images/1/7.JPG", "images/1/8.JPG", "images/1/9.JPG", "images/1/10.JPG"],
+    ["images/2/1.JPG", "images/2/2.jpg", "images/2/3.JPG", "images/2/4.JPG", "images/2/5.JPG", "images/2/6.jpg", "images/2/7.jpg", "images/2/8.JPG", "images/2/9.JPG", "images/2/10.JPG"],
+    ["images/3/1.JPG", "images/3/2.jpg", "images/3/3.jpg", "images/3/4.jpg", "images/3/5.JPG", "images/3/6.JPG", "images/3/7.jpg", "images/3/8.JPG"],
     ["images/4/1.jpg", "images/4/2.jpg", "images/4/3.jpg", "images/4/4.jpg", "images/4/5.jpg", "images/4/6.jpg", "images/4/7.jpg", "images/4/8.jpg"],
-    ["images/5/1.jpg", "images/5/2.jpg", "images/5/3.jpg", "images/5/4.jpg", "images/5/6.jpg", "images/5/7.jpg"],
-    ["images/6/1.jpg", "images/6/3.jpg", "images/6/5.jpg", "images/6/6.jpg", "images/6/7.jpg", "images/6/8.jpg", "images/6/9.jpg", "images/6/10.jpg", "images/6/2.jpg", "images/6/4.jpg"]
+    ["images/5/1.jpg", "images/5/2.JPG", "images/5/3.JPG", "images/5/4.JPG", "images/5/6.JPG", "images/5/7.JPG"],
+    ["images/6/1.JPG", "images/6/3.JPG", "images/6/5.JPG", "images/6/6.JPG", "images/6/7.JPG", "images/6/8.jpg", "images/6/9.JPG", "images/6/10.JPG", "images/6/2.JPG", "images/6/4.jpg"]
 ];
 
 let indiceActual = 0;
